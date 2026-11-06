@@ -1,0 +1,15 @@
+name: struggle-guard
+version: 0.1.0
+description: "Socratic tutor guardrail: tracks student attempts, ladders hints by level, screens responses for solution-shaped content, and logs the learning trail for the teacher."
+author: "gisc"
+requires_hermes: ">=0.21.5"
+provides_tools:
+  - struggle_guard_start
+  - struggle_guard_status
+  - struggle_guard_report
+  - struggle_guard_stop
+provides_hooks:
+  - post_api_request
+provides_middleware:
+  - llm_request
+  - llm_execution
