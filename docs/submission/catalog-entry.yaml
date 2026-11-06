@@ -1,0 +1,24 @@
+# DRAFT catalog entry for plugin-catalog/struggle-guard.yaml
+# Display name: Make It Harder. Tagline: "Life is hard. Why not make it harder." (period).
+# Repo slug: Main proposes gisc/make-it-harder (6 Nov). User approval pending; do not assume. Plugin name/dir struggle-guard unchanged unless user approves a full rename.
+# FILL AT SUBMISSION: repo URL (after repo creation), sha (exact 40-char pin of
+# the reviewed commit), docs_url. Do not submit with placeholders.
+name: struggle-guard
+repo: https://github.com/gisc/make-it-harder            # TODO confirm at repo creation (Main's proposal 6 Nov; user approval pending)
+sha: "0000000000000000000000000000000000000000"          # TODO pin exact commit
+description: 'Socratic tutor guardrail for teachers — deterministic hint ladder
+ gated on observed student attempts (SQLite state, anti-farming dedupe), heuristic
+ response screening with measured and published misses, teacher-console identity
+ bound to configured runtime session ids, and a local learning trail. No network
+ calls, no credentials, no telemetry; all state on-device.'
+maintainer: gisc                                          # TODO confirm GitHub username
+tier: community
+category: tools
+docs_url: https://github.com/gisc/make-it-harder          # TODO confirm
+version: "0.1.0"
+platforms: []
+capabilities:
+ provides_tools: [struggle_guard_start, struggle_guard_status, struggle_guard_report, struggle_guard_stop]
+ provides_hooks: [post_api_request]
+ provides_middleware: [llm_request, llm_execution]
+ requires_env: []
